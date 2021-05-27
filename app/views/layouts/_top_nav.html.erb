@@ -32,7 +32,8 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><% if current_user %>
+            <% if current_user %>
+              <li style="margin-left:19px"><%= current_user.firstname %></li>
               <li><%= link_to "Logout", '/logout' %></li>
             <% else %>
               <li><%= link_to 'Login', '/login' %></li>
