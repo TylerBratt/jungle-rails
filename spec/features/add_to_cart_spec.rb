@@ -1,6 +1,7 @@
 require 'rails_helper'
 
-RSpec.feature "navigation from home to ProductDetails page", type: :feature, js: true do
+RSpec.feature "AddToCarts", type: :feature, js: true do
+  
   before :each do
     @category = Category.create! name: 'Apparel'
 
@@ -14,14 +15,13 @@ RSpec.feature "navigation from home to ProductDetails page", type: :feature, js:
       )
     end
   end
-  scenario "select and click for single item" do
+
+  scenario "visit home, click add to cart update render on my cart" do
     # ACT
     visit root_path
-    # DEBUG / VERIFY
-    
-    page.first('article.product a').click
-    expect(page).to have_css '.product-detail'
-    
-    # save_screenshot
+    first('Button').click
+    save_screenshot('jungle1.png')
+    expect(page).to have_text 'My Cart (1)'
+
   end
 end
