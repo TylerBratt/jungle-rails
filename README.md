@@ -4,7 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Screenshots
 
-[]()
+![HomePage](https://github.com/TylerBratt/jungle-rails/blob/master/docs/homePage.jpg)
+![ProductDetails](https://github.com/TylerBratt/jungle-rails/blob/master/docs/productDetail.jpg)
+![Cart](https://github.com/TylerBratt/jungle-rails/blob/master/docs/myCart.jpg)
+![AdminDashboard](https://github.com/TylerBratt/jungle-rails/blob/master/docs/adminDash.jpg) ![AdminProducts](https://github.com/TylerBratt/jungle-rails/blob/master/docs/adminProds.jpg) 
+
 
 ## Additional Steps for Apple M1 Machines
 
